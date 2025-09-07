@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="ar">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+  <title>BouAli x Grendizer — v8 Bubbles</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="hud">
+    <div class="logo">BouAli x Grendizer — SHMUP</div>
+    <div class="stats">
+      <span id="score">Score: 0</span>
+      <span id="lives">❤️❤️❤️</span>
+      <span id="wave">Wave: 1</span>
+      <button id="ettifaqBtn" class="icon" title="Ettifaq Mode (T)">⚽</button>
+      <button id="muteBtn" class="icon" title="Mute/Unmute (M)">🔊</button>
+    </div>
+  </div>
+
+  <div id="intro" class="overlay">
+    <img src="assets/intro.jpg" alt="intro" class="intro-img"/>
+    <div class="intro-text">
+      <div class="bubble">
+        أنا بوعلي… لازم أهزم شرير كوكب فيغا وأنقذ مقهى CAVO الفضائي!
+      </div>
+      <button id="startBtn" class="primary">ابدأ</button>
+    </div>
+  </div>
+
+  <canvas id="game" width="960" height="540"></canvas>
+  <!-- Rotate hint for mobile portrait -->
+  <div id="rotateHint" class="overlay" style="display:none">
+    <div class="bubble">لف الجهاز لوضع العرض للعب أفضل 📱➡️📺</div>
+    <button id="playPortrait" class="primary">خلّها كذا وابدأ</button>
+  </div>
+  <!-- Hidden YouTube container for BGM -->
+  <div id="ytBgm" style="position:absolute;left:-9999px;top:-9999px;width:200px;height:113px"></div>
+  <script src="game.js"></script>
+</body>
+</html>
