@@ -25,3 +25,6 @@ Deploy
 
 Optional assets
 - Place background music at assets/bgm.mp3 to override the synth fallback if YouTube is blocked.
+
+License
+- This project is licensed under the MIT License. See the LICENSE file for details.
